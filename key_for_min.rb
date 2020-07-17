@@ -4,3 +4,5 @@
 def key_for_min_value(hash)
    hash = hash.sort_by {|k,v| v}.reverse
 end
+
+h = key_for_min_value(h)
