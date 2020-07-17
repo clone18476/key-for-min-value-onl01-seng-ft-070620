@@ -2,7 +2,9 @@
 # Given a hash with numeric values, return the key for the smallest value
 
 def key_for_min_value(hash)
-   hash = hash.sort_by {|k,v| v}.reverse
+  key = hash.sort{|a,b| a[1] <=> b[1]}.first
+  puts key
 end
 
-h = key_for_min_value(h)
+hash = { "n" => 100, "m" => 100, "y" => 300, "d" => 200, "a" => 0 }
+key_for_min_value(hash)
