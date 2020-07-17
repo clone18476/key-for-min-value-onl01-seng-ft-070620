@@ -1,4 +1,6 @@
 # prereqs: iterators, hashes, conditional logic
 # Given a hash with numeric values, return the key for the smallest value
 
-key = hash.sort{|a,b| a[1] <=> b[1]}.first[0]
+def reverse_sort_hash_value(hash)
+   hash = hash.sort_by {|k,v| v}.reverse
+end
